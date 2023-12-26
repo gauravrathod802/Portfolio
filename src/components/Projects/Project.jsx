@@ -4,6 +4,7 @@ import Project1 from './../../assets/project1.PNG';
 import Project2 from './../../assets/project2.PNG';
 import Project3 from './../../assets/project3.PNG';
 import Project4 from './../../assets/project4.PNG';
+import Project5 from './../../assets/project5.PNG';
 
 export const Project = () => {
 
@@ -64,7 +65,19 @@ export const Project = () => {
                             </div>
                         </div>
                     </div>
-{/*  */}
+                {/* 5 */}
+
+                <div className="project-card">
+                        <img src={Project5} alt="project5" />
+                        <h2 className='project-title'>Amazon Frontend Clone</h2>
+                        <div className="pro-details">
+                            <p>Front-end Clone of Amazon built using HTML and CSS.</p>
+                            <div className="pro-btns">
+                                <a href="https://gauravrathod802.github.io/Amazon-Clone/"><button className='btn'>View</button></a>
+                                <a href="https://github.com/gauravrathod802/Amazon-Clone"><button className='btn'>Source</button></a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

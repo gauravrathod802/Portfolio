@@ -1,0 +1,29 @@
+#about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    margin: 1rem;
+}
+
+.about-container{
+    width: 90vw;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+
+.about-img{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me-text{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
