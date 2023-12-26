@@ -4,6 +4,7 @@ import './Navbar.css'
 import { Link } from 'react-scroll';
 import contactImg from './../../assets/contact.png'
 import menu from './../../assets/menu.png'
+
 const Navbar = () => {
     const[showMenu,setShowMenu] = useState(false);
     return (

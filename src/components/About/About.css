@@ -20,10 +20,14 @@
     width: 400px;
     display: flex;
     justify-content: space-around;
+    /* border: 9px outset red; */
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px 2px rgb(240, 240, 242),inset 4px 4px 4px 4px white ;
 }
 
-.about-me-text{
-    width: 600px;
-    display: flex;
-    justify-content: space-around;
+.about-me-text p{
+    width: 500px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    margin: 3rem;
 }

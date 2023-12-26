@@ -11,7 +11,9 @@ const About = () => {
                     <img src={ABOUT} alt="" />
                 </div>
                 <div className="about-me-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum earum vitae repudiandae nobis voluptates sit veritatis quo quas ex ullam perspiciatis quam animi temporibus, odio ad adipisci, odit deleniti dignissimos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quisquam, esse est accusamus facere rem id laboriosam culpa cumque? Magni provident voluptates aspernatur nobis minima quisquam numquam voluptate, sint earum unde aut, quasi quo fugiat architecto quibusdam odit repudiandae veritatis!</p>
+                    <h1>Developer</h1>
+                    <p>
+                        Hi there I'am Gaurav Rathod, i have completed my bachelors from Sknsits, Lonavala pune. I am a front-end web developer I can provide clean code and pixel perfect design. I also make the website more & more interactive. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
                 </div>
             </div>
         </section>
