@@ -82,20 +82,65 @@
 }
 
 
-
-
-
-
-
-
-
 @media screen and (max-width: 640px){
     .project h1{
         font-size: 2rem;
+        margin-left: 70vw;
+
     }
     .project p{
+        width: 100vw;
         font-size: 1.4rem;
-        text-align: center;
+        margin-left: 60vw;
     }
-    
+    .pro-details p{
+        width: 50vw;
+        padding-bottom: 1rem;
+        font-size: 1.1rem;
+        margin-left: 7vw;
+        text-align: justify;
+    }    
+
+    .project-container{
+        margin: auto;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-gap: 40px;
+        padding: 3rem;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+@media screen and (max-width:600px) {
+    #skills h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70vw;
+    }
+    .skills-card{
+        display: grid;
+        width: 85vw;
+        margin-left: 40vw;
+        grid-gap:10px;
+
+    }    
 }

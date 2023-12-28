@@ -60,7 +60,6 @@
     display: none;
     object-fit: cover;
     height: 1.8rem;
-
 }
 
 .navMenu{
@@ -84,9 +83,11 @@
     background: rgb(30,30,30);
 }
 
-@media screen and (max-width:720px){
+/* height 163mm  width: 75.78 mm      640 px 400px*/
+@media screen and (max-width:620px){
     .mobMenu{
         display: flex;
+        margin-left: 27rem;
     }
     .desktopMenu{
         display: none;

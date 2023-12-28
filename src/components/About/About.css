@@ -7,8 +7,7 @@
 }
 
 .about-container{
-    width: 90vw;
-    /* height: 100%; */
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     margin-bottom: 10rem;
@@ -20,14 +19,46 @@
     width: 400px;
     display: flex;
     justify-content: space-around;
-    /* border: 9px outset red; */
     border-radius: 50%;
     box-shadow: 4px 4px 20px 2px rgb(240, 240, 242),inset 4px 4px 4px 4px white ;
 }
 
+.about-me-text h2{
+    margin-left: 15vw;
+    font-size: 1.7rem;
+}
+
 .about-me-text p{
     width: 500px;
-    /* display: flex; */
-    /* justify-content: space-around; */
     margin: 3rem;
+}
+
+
+
+/* reponsiveness for mobile devices */
+
+@media screen and (max-width:640px) {
+    #about h1{
+        margin-left: 70vw;
+        margin-bottom: 80vw;
+        margin-top: 50vw;
+    }
+
+    .about-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 130vw;
+    }
+    .about-img{
+        width: 60%;
+        height: 240px;
+        margin-top: 20px;
+    }
+    .about-me-text h2{
+        margin-left: 30vw;
+    }
+    .about-me-text p{
+        width: 360px;
+    }
 }

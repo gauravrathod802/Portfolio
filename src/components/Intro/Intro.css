@@ -10,7 +10,7 @@
     position: absolute;
     top: 12rem;
     right: 10rem;
-    /* left: 55rem; */
+    left: 55rem;
     z-index: -1;
     object-fit: cover;
     height: 60vh;
@@ -66,63 +66,27 @@
 
 
 
-@media screen and (max-width: 520px){
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px){
     .bg{
-        right: -40vw;
+        left: 85vw;
         height: 35vh;
-        top:15rem;
+        top:18rem;
     }
     .introContent{
         font-size: 6vw;        
     }
     .hello{
         font-size: 4.5vw;
-    }    
-}
-
-@media screen and (max-width: 720px){
-    .bg{
-        right: -30vw;
-        height: 45vh;
-        top:13rem;
-    }
-    .introContent{
-        font-size: 6vw;        
-    }
-    .hello{
-        font-size: 4.5vw;
-    }    
-}
-
-
-@media screen and (min-width: 720px) and (max-width: 1580px){
-    .bg{
-        right: 13vw;
-        height: 60vh;
-        top:11rem;
-    }
-    .introContent{
-        font-size: 3rem;        
-    }
-    .hello{
-        font-size: 2.5vw;
-    }    
-}
-
-@media screen and (min-width:1580px){
-    .bg{
-        position: absolute;
-        top: 12rem;
-        right: 10rem;
-        /* left: 55rem; */
-        z-index: -1;
-        object-fit: cover;
-        height: 60vh;
-    }
-    .introContent{
-        font-size: 3rem;        
-    }
-    .hello{
-        font-size: 2.9vw;
     }    
 }
