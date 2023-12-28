@@ -10,7 +10,6 @@
     position: absolute;
     top: 12rem;
     right: 10rem;
-    left: 55rem;
     z-index: -1;
     object-fit: cover;
     height: 60vh;
@@ -53,38 +52,27 @@
 
 .btnImg{
     object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
+    /* margin: 0 0.25rem; */
+    height: 1.2rem;
+    font-weight: 1200;
+    margin-bottom: -0.3rem;
+    width: 1.2rem;
+    margin-left: -0.3rem;
+    margin-right: 0.5rem;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px){
-    #intro{
+    /* #intro{
         margin-bottom: 450px;
-    }
+    } */
     .bg{
-        left: 95vw;
-        height: 35vh;
-        top:18rem;
+        right:-65vw;
+        height: 36vh;
+        top:19rem;
     }
     .introContent{
         font-size: 6vw;        

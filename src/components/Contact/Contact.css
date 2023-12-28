@@ -70,3 +70,20 @@
 .link:hover{
     transform: scale(1.2);
 }
+
+
+
+
+
+@media screen and (max-width:640px) {
+    #contactPage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 35vw;
+    }
+    .link{
+        margin-top: 5rem;
+    }
+
+}

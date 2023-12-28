@@ -2,7 +2,7 @@ import React from 'react'
 import './Intro.css';
 // import {Link} from 'react-scroll';
 import bg from './../../assets/about.png';
-import btnImg from './../../assets/hireme.png';
+import btnImg from './../../assets/downloadgif.gif';
 import PDF from './../../assets/Gaurav_Resume.pdf';
 
 const Intro = () => {
@@ -15,8 +15,7 @@ const Intro = () => {
                 </span>
                 <p className="introPara">I am a skilled web developer with experience in creating <br /> web sites.</p>
                 {/* <Link><a href={PDF}><button className="btn"><img src={btnImg} alt="Hire" className="btnImg" />Resume</button></a></Link> */}
-                <a href={PDF}><button className="btn"><img src={btnImg} alt="Hire" className="btnImg" />Resume</button></a>
-
+                <a href={PDF}><button className="btn"><img src={btnImg} alt="download" className="btnImg" />Resume</button></a>
             </div>
             <img src={bg} alt="Profile" className="bg" />
         </section>        
