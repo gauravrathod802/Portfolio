@@ -87,7 +87,7 @@
 @media screen and (max-width:620px){
     .mobMenu{
         display: flex;
-        margin-left: 27rem;
+        margin-left: 29rem;
     }
     .desktopMenu{
         display: none;
