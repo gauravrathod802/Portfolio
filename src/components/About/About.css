@@ -37,9 +37,9 @@
 
 /* reponsiveness for mobile devices */
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:600px) {
     #about h1{
-        margin-left: 70vw;
+        margin-left: 75vw;
         margin-bottom: 20vw;
         margin-top: 20vw;
     }
@@ -62,4 +62,39 @@
     .about-me-text p{
         width: 350px;
     }
+}
+
+
+@media screen and (max-width:1030px) and (min-width:600px){
+
+    .about-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-img{
+        position: relative;
+        left:5vw;
+        height: 39vw;
+        /* top: 10vw; */
+        margin-right: 50px;
+    }
+
+    .about-me-text p{
+        width: 450px;
+    } 
+
+    /* #about h1{
+        margin-left: 75vw;
+        margin-bottom: 20vw;
+        margin-top: 20vw;
+    }
+
+   
+   
+    .about-me-text h2{
+        margin-left: 30vw;
+    }
+   */
+
 }

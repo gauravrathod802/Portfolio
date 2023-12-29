@@ -13,7 +13,7 @@ const About = () => {
                 <div className="about-me-text">
                     <h2>Developer</h2>
                     <p>
-                        Hi there I'am Gaurav Rathod, i have completed my bachelors from Sknsits, Lonavala pune. I am a front-end web developer I can provide clean code and pixel perfect design. I also make the website more & more interactive. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
+                        Hi there I'am Gaurav Rathod, I have completed my bachelors from Sknsits, Lonavala Pune. I am a front-end web developer I can provide clean code and pixel perfect design. I thrive on transforming innovative ideas into reality through the power of code. With a strong foundation in Java programming, I have honed my skills to excel in web development and database management. My goal is to contribute my technical proficiency and problem-solving abilities to dynamic projects.</p>
                 </div>
             </div>
         </section>

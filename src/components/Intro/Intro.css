@@ -6,11 +6,33 @@
     overflow: hidden;
 }
 
+
+#intro {
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Use fadeIn animation for 1 second */
+  
+    /* Additional styling for your project section */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+    }
+  }
+  
+
+
+
+
+
 .bg{
     position: absolute;
     top: 12rem;
     right: 10rem;
-    z-index: -1;
+    z-index: 2;
     object-fit: cover;
     height: 60vh;
 }
@@ -41,6 +63,10 @@
     font-weight: 300;
 }
 
+.introContent p{
+    max-width: 45vw;
+}
+
 .btn{
     background: white;
     margin: 1rem 0;
@@ -62,15 +88,64 @@
 }
 
 
+/* auto type */
+.introContent .autoType{
+    position: relative;
+    z-index: 1;
+
+}
+
+.autoType:before{
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid yellow ;
+    background: rgb(30,30,30);
+    animation: animate 4s steps(13) infinite;
+    z-index: 0;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
 
 
+.emoji {
+    display: inline-block;
+    animation: wave 3s infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25%, 75% {
+        transform: rotate(60deg);
+    }
+    60% {
+        transform: rotate(30deg);
+    }
+}
+
+
+
+
+
+
+/* responsiveness */
 
 @media screen and (max-width: 600px){
-    /* #intro{
-        margin-bottom: 450px;
-    } */
     .bg{
-        right:-65vw;
+        right:-73vw;
         height: 36vh;
         top:19rem;
     }
@@ -79,5 +154,52 @@
     }
     .hello{
         font-size: 4.5vw;
-    }    
+    }  
+    .introContent p{
+        max-width: 85vw;
+    }
 }
+
+
+@media screen and (max-width: 768px) and (min-width: 600px){
+    .bg{
+        right: -2vw;
+        top: 30vw;
+        height: 35vw;
+    }
+    .introContent{
+        font-size: 4vw;        
+    }
+    .hello{
+        font-size: 3.8vw;
+    } 
+    .introContent p{
+        max-width: 60vw;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .bg{
+        right: -2vw;
+        top: 20vw;
+        height: 35vw;
+    }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width:  1024px){
+    .bg{
+        right: 1vw;
+        height: 30vw;
+    }
+    .introContent{
+        font-size: 4vw;        
+    }
+    .hello{
+        font-size: 3.8vw;
+    } 
+    .introContent p{
+        max-width: 50vw;
+    }
+}
+

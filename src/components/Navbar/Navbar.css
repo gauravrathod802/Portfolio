@@ -17,6 +17,7 @@
     /* height: 15rem; */
     /* margin-top:3rem ; */
     font-size: 2rem;
+    color: yellow;
 }
 
 .desktopMenuListItem{
@@ -63,25 +64,28 @@
 }
 
 .navMenu{
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    z-index: 2;
-    display: flex;
     flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
-    min-width: 15rem;
-    background:rgb(40,40,40);
-    border-radius: 1rem;
+    /* justify-content:center; */
+    align-items:center;
+    width: 100%;
+    height: 180vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    padding-top: 15rem;
+    left: 20rem;
+    z-index: -3;
 }
 
 .listItem{
     color: white;
+    padding: 1rem 0;
+    font-size: 2rem;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    background: rgb(30,30,30);
 }
+
+
 
 /* height 163mm  width: 75.78 mm      640 px 400px*/
 @media screen and (max-width:620px){
@@ -94,6 +98,11 @@
     }
     .desktopMenuBtn{
         display: none;
+    }
+    .active{
+        color: yellow;
+        padding-bottom: 0.5rem;
+        border-bottom: 5px solid yellow;
     }
     
 }
