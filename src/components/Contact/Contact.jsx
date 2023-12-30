@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Contact.css'
 import Linkedin from './../../assets/linkedin.png'
 import Github from './../../assets/github.png';
@@ -7,6 +7,8 @@ import Instagram from './../../assets/instagram.png';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import Loading from './../../assets/loadinggif.gif'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const Contact = () => {
     const form = useRef();
@@ -52,8 +54,12 @@ const Contact = () => {
                 setLoading(false);
             });
     };
+
+    useEffect(()=>{
+        AOS.init({duration: 2000});
+    }, []);
     return (
-        <section id='contactPage'>
+        <section id='contactPage' data-aos="fade-up">
             <div id="contact">
                 <h1 className="contactPageTitle">Contact Me</h1>
                 <span className="contactDesc">I'm always open to exciting opportunities and collaborations. Connect with me to discuss how my skills can contribute to your projects or team.</span>

@@ -17,11 +17,11 @@ import 'aos/dist/aos.css';
 
 const Skills = () => {
     useEffect(()=>{
-        AOS.init({duration: 10000});
+        AOS.init({duration: 8000});
     }, []);
 
     return (
-        <section id='skills' data-aos="fade-up">
+        <section id='skills' data-aos="fade-down">
             <h1>Skills</h1>
             <div className="skills-container">
                 <div className="skills-card">

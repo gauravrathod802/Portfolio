@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Intro.css';
 import bg from './../../assets/myPhoto2.png';
 import btnImg from './../../assets/downloadgif.gif';
-import PDF from './../../assets/Gaurav_Resume.pdf';
+// import PDF from './../../assets/Gaurav_Resume.pdf';
 
 const Intro = () => {
     const [text, setText] = useState("Web Developer");
@@ -48,7 +48,7 @@ const Intro = () => {
                 </span>
                 <p className="introPara">Welcome to my digital space, where I showcase my skills, projects, and commitment to delivering 
                 high-quality solutions.</p>
-                <a href={PDF}><button className="btn"><img src={btnImg} alt="download" className="btnImg" />Resume</button></a>
+                <a href="https://drive.google.com/drive/folders/1RGzE6Pn0e4DTZBLYdgGtye-A8fyJn62M" target='_blank' rel="noopener noreferrer"><button className="btn"><img src={btnImg} alt="download" className="btnImg" />Resume</button></a>
             </div>
             <img src={bg} alt="Profile" className="bg" />
         </section>
