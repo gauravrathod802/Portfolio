@@ -1,14 +1,20 @@
 import './About.css'
-import React from 'react'
-import ABOUT from './../../assets/about.png'
+import React, { useEffect } from 'react'
+import ABOUT from './../../assets/myPhoto2.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+    }, []);
+
     return (
-        <section id='about'>
+        <section id='about' data-aos="zoom-in">
             <h1>About</h1>
             <div className="about-container">
                 <div className="about-img">
-                    <img src={ABOUT} alt="" />
+                    <img src={ABOUT} alt="img not displayed" />
                 </div>
                 <div className="about-me-text">
                     <h2>Developer</h2>

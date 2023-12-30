@@ -13,11 +13,8 @@
 }
 
 .logo{
-    /* object-fit: cover; */
-    /* height: 15rem; */
-    /* margin-top:3rem ; */
     font-size: 2rem;
-    color: yellow;
+    color: #9875da;
 }
 
 .desktopMenuListItem{
@@ -27,9 +24,9 @@
 }
 
 .desktopMenuListItem:hover{
-    color: yellow;
+    color: #9875da;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #9875da;
 }
 
 .desktopMenuBtn{
@@ -52,20 +49,20 @@
 }
 
 .active{
-    color: yellow;
+    color: #9875da;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #9875da;
 }
 
 .mobMenu{
     display: none;
     object-fit: cover;
-    height: 1.8rem;
+    height: 2.1rem;
+    cursor: pointer;
 }
 
 .navMenu{
     flex-direction: column;
-    /* justify-content:center; */
     align-items:center;
     width: 100%;
     height: 180vh;
@@ -87,6 +84,7 @@
 
 
 
+
 /* height 163mm  width: 75.78 mm      640 px 400px*/
 @media screen and (max-width:620px){
     .mobMenu{
@@ -100,9 +98,8 @@
         display: none;
     }
     .active{
-        color: yellow;
+        color: #9875da;
         padding-bottom: 0.5rem;
-        border-bottom: 5px solid yellow;
-    }
-    
+        border-bottom: 5px solid #9875da;
+    }    
 }

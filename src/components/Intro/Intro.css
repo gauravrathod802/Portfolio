@@ -1,4 +1,4 @@
-#intro{
+#intro {
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
@@ -6,29 +6,24 @@
     overflow: hidden;
 }
 
-
 #intro {
-    opacity: 0; /* Start with 0 opacity */
-    animation: fadeIn 1s ease-in-out forwards; /* Use fadeIn animation for 1 second */
-  
-    /* Additional styling for your project section */
-  }
-  
-  @keyframes fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0; /* Start with 0 opacity */
+        opacity: 0;
+        /* Start with 0 opacity */
     }
+
     to {
-      opacity: 1; /* End with full opacity */
+        opacity: 1;
+        /* End with full opacity */
     }
-  }
-  
+}
 
-
-
-
-
-.bg{
+.bg {
     position: absolute;
     top: 12rem;
     right: 10rem;
@@ -37,7 +32,7 @@
     height: 60vh;
 }
 
-.introContent{
+.introContent {
     height: 100vh;
     width: 100vw;
     padding: 2rem;
@@ -48,26 +43,26 @@
     justify-content: center;
 }
 
-.hello{
+.hello {
     font-size: 1.75rem;
     font-weight: 100;
 }
 
-.introName{
-    color: yellow;
+.introName {
+    color: #9875da;
 }
 
-.introPara{
+.introPara {
     font-size: medium;
     letter-spacing: 1px;
     font-weight: 300;
 }
 
-.introContent p{
+.introContent p {
     max-width: 45vw;
 }
 
-.btn{
+.btn {
     background: white;
     margin: 1rem 0;
     padding: 0.75rem 1.5rem;
@@ -76,7 +71,7 @@
     cursor: pointer;
 }
 
-.btnImg{
+.btnImg {
     object-fit: cover;
     /* margin: 0 0.25rem; */
     height: 1.2rem;
@@ -87,37 +82,36 @@
     margin-right: 0.5rem;
 }
 
-
 /* auto type */
-.introContent .autoType{
+.introContent .autoType {
     position: relative;
     z-index: 1;
-
 }
 
-.autoType:before{
+.autoType:before {
     content: "";
     position: absolute;
     /* top: 0; */
     left: 0;
     height: 100%;
     width: 100%;
-    border-left: 3px solid yellow ;
-    background: rgb(30,30,30);
+    border-left: 3px solid #9875da;
+    background: rgb(30, 30, 30);
     animation: animate 4s steps(13) infinite;
     z-index: 0;
 }
 
-@keyframes animate{
-    40%, 60%{
+@keyframes animate {
+
+    40%,
+    60% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: 0%;
     }
-    
 }
-
 
 .emoji {
     display: inline-block;
@@ -125,81 +119,87 @@
 }
 
 @keyframes wave {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
-    25%, 75% {
+
+    25%,
+    75% {
         transform: rotate(60deg);
     }
+
     60% {
         transform: rotate(30deg);
     }
 }
 
-
-
-
-
-
 /* responsiveness */
 
-@media screen and (max-width: 600px){
-    .bg{
-        right:-73vw;
+@media screen and (max-width: 600px) {
+    .bg {
+        right: -73vw;
         height: 36vh;
-        top:19rem;
+        top: 19rem;
     }
-    .introContent{
-        font-size: 6vw;        
+
+    .introContent {
+        font-size: 6vw;
     }
-    .hello{
+
+    .hello {
         font-size: 4.5vw;
-    }  
-    .introContent p{
+    }
+
+    .introContent p {
         max-width: 85vw;
     }
 }
 
-
-@media screen and (max-width: 768px) and (min-width: 600px){
-    .bg{
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .bg {
         right: -2vw;
         top: 30vw;
         height: 35vw;
     }
-    .introContent{
-        font-size: 4vw;        
+
+    .introContent {
+        font-size: 4vw;
     }
-    .hello{
+
+    .hello {
         font-size: 3.8vw;
-    } 
-    .introContent p{
+    }
+
+    .introContent p {
         max-width: 60vw;
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px){
-    .bg{
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .bg {
         right: -2vw;
         top: 20vw;
         height: 35vw;
     }
 }
 
-
-@media screen and (max-width: 1440px) and (min-width:  1024px){
-    .bg{
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+    .bg {
         right: 1vw;
         height: 30vw;
     }
-    .introContent{
-        font-size: 4vw;        
+
+    .introContent {
+        font-size: 4vw;
     }
-    .hello{
+
+    .hello {
         font-size: 3.8vw;
-    } 
-    .introContent p{
+    }
+
+    .introContent p {
         max-width: 50vw;
     }
 }
-

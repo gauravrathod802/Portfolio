@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Intro.css';
-import bg from './../../assets/about.png';
+import bg from './../../assets/myPhoto2.png';
 import btnImg from './../../assets/downloadgif.gif';
 import PDF from './../../assets/Gaurav_Resume.pdf';
 

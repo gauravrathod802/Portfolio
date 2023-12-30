@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Skills.css';
 import HTML from './../../assets/skills/html.png';
 import CSS from './../../assets/skills/css.png';
@@ -12,11 +12,16 @@ import GIT from './../../assets/skills/git.png';
 import GITHUB from './../../assets/skills/github.png';
 import INTELLIJ from './../../assets/skills/intellij.png';
 import VSCODE from './../../assets/skills/vs-code.png';
-
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const Skills = () => {
+    useEffect(()=>{
+        AOS.init({duration: 10000});
+    }, []);
+
     return (
-        <section id='skills'>
+        <section id='skills' data-aos="fade-up">
             <h1>Skills</h1>
             <div className="skills-container">
                 <div className="skills-card">

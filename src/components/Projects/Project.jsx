@@ -1,15 +1,19 @@
 import './Project.css'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Project1 from './../../assets/project1.PNG';
 import Project2 from './../../assets/project2.PNG';
 import Project3 from './../../assets/project3.PNG';
 import Project4 from './../../assets/project4.PNG';
 import Project5 from './../../assets/project5.PNG';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-export const Project = () => {
-
+const Project = () => {
+    useEffect(()=>{
+        AOS.init({duration: 2500});
+    }, []);
     return (
-        <div className='project'>
+        <div className='project' data-aos="flip-left">
             <h1>Projects</h1>
             <p>Some of my most recent works.</p>
 

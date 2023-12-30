@@ -74,10 +74,10 @@ const Contact = () => {
 
                     {/* Icons */}
                     <div className="links">
-                        <a href="https://www.linkedin.com/in/gaurav-rathod-295547213/"> <img src={Linkedin} alt="" className="link" /></a>
-                        <a href="https://github.com/gauravrathod802"><img src={Github} alt="" className="link" /></a>
-                        <a href="https://www.hackerrank.com/profile/gauravrathod802"><img src={Hackerrank} alt="" className="link" /></a>
-                        <a href="https://www.instagram.com/gaurav__rathod1/"><img src={Instagram} alt="" className="link" /></a>
+                        <a href="https://www.linkedin.com/in/gaurav-rathod-295547213/" target="_blank" rel="noopener noreferrer"> <img src={Linkedin} alt="" className="link" /></a>
+                        <a href="https://github.com/gauravrathod802" target="_blank" rel="noopener noreferrer"><img src={Github} alt="" className="link" /></a>
+                        <a href="https://www.hackerrank.com/profile/gauravrathod802" target="_blank" rel="noopener noreferrer"><img src={Hackerrank} alt="" className="link" /></a>
+                        <a href="https://www.instagram.com/gaurav__rathod1/" target="_blank" rel="noopener noreferrer"><img src={Instagram} alt="" className="link" /></a>
                     </div>
                 </form>
             </div>
