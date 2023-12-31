@@ -7,19 +7,6 @@ import btnImg from './../../assets/downloadgif.gif';
 const Intro = () => {
     const [text, setText] = useState("Web Developer");
     
-    // const textLoad = () => {
-    //     setTimeout(() => {
-    //         setText("Java Developer");
-
-    //         // After Java Developer, restart the cycle with Web Developer
-    //         setTimeout(() => {
-    //             setText("Web Developer");
-    //             // Start the next loop after completing the current cycle
-    //             textLoad();
-    //         }, 4000); // Adjusted timing for Web Developer
-    //     }, 4000); // Adjusted timing for Java Developer
-    // };
-
     useEffect(() => {
         const textLoad = () => {
             setTimeout(() => {
@@ -38,7 +25,7 @@ const Intro = () => {
         textLoad();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-      
+
     return (
         <section id="intro">
             <div className="introContent">
